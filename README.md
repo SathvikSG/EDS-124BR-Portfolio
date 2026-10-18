@@ -6,10 +6,10 @@ Video work for EDS 124BR. Each entry links to the posted video.
 
 ## Videos
 
-| # | Title | Date | Link | Notes |
-|---|-------|------|------|-------|
-| 1 | _TBD_ | _TBD_ | _TBD_ | |
+| Week | Title | Date | Link | Notes |
+|------|-------|------|------|-------|
+| 1 | | | [Watch](https://youtu.be/PJqOlBJJByY) | |
 
 ## Adding a video
 
-Add a row to the table above with the title, date, and link.
+Add a row to the table above with the week, title, date, and link.
