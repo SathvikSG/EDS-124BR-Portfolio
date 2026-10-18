@@ -12,6 +12,7 @@ Video work for EDS 124BR. Each entry links to the posted video.
 | | Code Explanation Repeats Right after | | [Watch](https://youtu.be/HTSlDFOu3TM) | |
 | | Repeat Animal Parade | | [Watch](https://youtu.be/1ptq4jClCiU) | |
 | | nested repeats | | [Watch](https://youtu.be/BVmO6WbDiVA) | |
+| | Monkey and Banana Minigame | | [Watch](https://youtu.be/y-Beh6orcxM) | |
 
 ## Adding a video
 
