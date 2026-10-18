@@ -11,6 +11,7 @@ Video work for EDS 124BR. Each entry links to the posted video.
 | 1 | | | [Watch](https://youtu.be/PJqOlBJJByY) | |
 | | Code Explanation Repeats Right after | | [Watch](https://youtu.be/HTSlDFOu3TM) | |
 | | Repeat Animal Parade | | [Watch](https://youtu.be/1ptq4jClCiU) | |
+| | nested repeats | | [Watch](https://youtu.be/BVmO6WbDiVA) | |
 
 ## Adding a video
 
