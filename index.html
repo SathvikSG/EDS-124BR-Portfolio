@@ -4,31 +4,67 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>EDS 124BR Video Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 <style>
-  :root { --bg: #fafafa; --fg: #1a1a1a; --muted: #666; --card: #fff; --border: #e5e5e5; }
+  :root {
+    --bg: #f6f4ef; --fg: #1c1b19; --muted: #6e6a62; --line: #dcd7cc;
+    --accent: #c2410c; --shadow: 0 18px 40px -18px rgba(40, 30, 10, .35);
+  }
   @media (prefers-color-scheme: dark) {
-    :root { --bg: #121212; --fg: #eaeaea; --muted: #9a9a9a; --card: #1c1c1c; --border: #2c2c2c; }
+    :root {
+      --bg: #141312; --fg: #efebe3; --muted: #9b968c; --line: #2e2b27;
+      --accent: #fb923c; --shadow: 0 18px 40px -18px rgba(0, 0, 0, .8);
+    }
   }
   * { box-sizing: border-box; }
-  body { margin: 0; background: var(--bg); color: var(--fg);
-         font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
-  main { max-width: 900px; margin: 0 auto; padding: 32px 16px 64px; }
-  h1 { margin: 0 0 4px; font-size: 1.8rem; }
-  .sub { margin: 0 0 32px; color: var(--muted); }
-  .grid { display: grid; gap: 24px; grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); }
-  @media (max-width: 440px) { .grid { grid-template-columns: 1fr; } }
-  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
-  .card h2 { margin: 0; padding: 12px 14px; font-size: 1rem; font-weight: 600; }
-  .frame { position: relative; aspect-ratio: 16 / 9; background: #000; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 16px/1.6 Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  header { text-align: center; padding: 88px 16px 40px; }
+  .eyebrow {
+    margin: 0 0 14px; font-size: .78rem; font-weight: 500;
+    letter-spacing: .22em; text-transform: uppercase; color: var(--accent);
+  }
+  h1 {
+    margin: 0; font-family: Fraunces, Georgia, serif; font-weight: 600;
+    font-size: clamp(2.2rem, 6vw, 3.6rem); line-height: 1.1;
+  }
+  .name { margin: 14px 0 0; color: var(--muted); font-size: 1.05rem; }
+  main { max-width: 1100px; margin: 0 auto; padding: 0 16px 120px; }
+  section { padding: 72px 0; border-top: 1px solid var(--line); text-align: center; }
+  .num {
+    display: block; margin-bottom: 10px; font-size: .8rem; font-weight: 500;
+    letter-spacing: .2em; color: var(--muted);
+  }
+  h2 {
+    margin: 0 0 32px; font-family: Fraunces, Georgia, serif; font-weight: 500;
+    font-size: clamp(1.5rem, 3.6vw, 2.2rem); line-height: 1.2;
+  }
+  .frame {
+    position: relative; aspect-ratio: 16 / 9; width: 100%;
+    border-radius: 14px; overflow: hidden; background: #000; box-shadow: var(--shadow);
+  }
   .frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  footer { text-align: center; color: var(--muted); font-size: .85rem; padding: 0 16px 48px; }
+  @media (max-width: 600px) {
+    header { padding: 56px 16px 24px; }
+    section { padding: 48px 0; }
+    h2 { margin-bottom: 22px; }
+    .frame { border-radius: 10px; }
+  }
 </style>
 </head>
 <body>
-<main>
-  <h1>EDS 124BR Video Portfolio</h1>
-  <p class="sub">Sathvik Guntha</p>
-  <div class="grid" id="videos"></div>
-</main>
+<header>
+  <p class="eyebrow">EDS 124BR</p>
+  <h1>Video Portfolio</h1>
+  <p class="name">Sathvik Guntha</p>
+</header>
+<main id="videos"></main>
+<footer>EDS 124BR</footer>
 <script>
   const videos = [
     ["Week 1", "PJqOlBJJByY"],
@@ -37,16 +73,26 @@
     ["nested repeats", "BVmO6WbDiVA"],
     ["Monkey and Banana Minigame", "y-Beh6orcxM"],
   ];
-  const grid = document.getElementById("videos");
-  for (const [title, id] of videos) {
-    const card = document.createElement("div");
-    card.className = "card";
-    card.innerHTML =
-      '<div class="frame"><iframe src="https://www.youtube-nocookie.com/embed/' + id +
-      '" title="' + title + '" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe></div>' +
-      '<h2>' + title + '</h2>';
-    grid.appendChild(card);
-  }
+  const main = document.getElementById("videos");
+  videos.forEach(([title, id], i) => {
+    const s = document.createElement("section");
+    const num = document.createElement("span");
+    num.className = "num";
+    num.textContent = String(i + 1).padStart(2, "0");
+    const h = document.createElement("h2");
+    h.textContent = title;
+    const f = document.createElement("div");
+    f.className = "frame";
+    const iframe = document.createElement("iframe");
+    iframe.src = "https://www.youtube-nocookie.com/embed/" + id;
+    iframe.title = title;
+    iframe.loading = "lazy";
+    iframe.allow = "accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen";
+    iframe.allowFullscreen = true;
+    f.appendChild(iframe);
+    s.append(num, h, f);
+    main.appendChild(s);
+  });
 </script>
 </body>
 </html>
