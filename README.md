@@ -58,4 +58,14 @@ Click on any of the videos below to watch.
 
 <a href="https://youtu.be/y-Beh6orcxM"><img src="https://img.shields.io/badge/%E2%96%B6%20Play-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Play" height="36"></a>
 
+<br><br>
+
+---
+
+### Variables
+
+<a href="https://youtu.be/AjNo7jnJILU"><img src="https://img.youtube.com/vi/AjNo7jnJILU/hqdefault.jpg" width="720" alt="Variables"></a>
+
+<a href="https://youtu.be/AjNo7jnJILU"><img src="https://img.shields.io/badge/%E2%96%B6%20Play-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Play" height="36"></a>
+
 </div>
