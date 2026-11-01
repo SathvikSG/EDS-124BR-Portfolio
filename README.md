@@ -74,7 +74,7 @@ Click on any of the videos below to watch.
 
 ### Conditional Loops
 
-<a href="https://youtu.be/788K1UogC4I"><img src="https://i.ytimg.com/vi/788K1UogC4I/hqdefault.jpg?v=2" width="720" alt="Conditional Loops"></a>
+<a href="https://youtu.be/788K1UogC4I"><img src="https://i.ytimg.com/vi/788K1UogC4I/hqdefault.jpg" width="720" alt="Conditional Loops"></a>
 
 <a href="https://youtu.be/788K1UogC4I"><img src="https://img.shields.io/badge/%E2%96%B6%20Play-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Play" height="36"></a>
 
