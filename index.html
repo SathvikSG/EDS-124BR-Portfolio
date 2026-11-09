@@ -49,6 +49,7 @@
     border-radius: 14px; overflow: hidden; background: #000; box-shadow: var(--shadow);
   }
   .frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .note { margin: 18px 0 0; color: var(--muted); font-size: .95rem; font-style: italic; }
   footer { text-align: center; color: var(--muted); font-size: .85rem; padding: 0 16px 48px; }
   @media (max-width: 600px) {
     header { padding: 56px 16px 24px; }
@@ -76,9 +77,10 @@
     ["Monkey and Banana Minigame", "y-Beh6orcxM"],
     ["Variables", "6qkA8ygtszs"],
     ["Conditional Loops", "788K1UogC4I"],
+    ["Target Ball Game", "VqgNeBFuAow", "Note: my recording software failed, so this is a recording of the original recording."],
   ];
   const main = document.getElementById("videos");
-  videos.forEach(([title, id], i) => {
+  videos.forEach(([title, id, note], i) => {
     const s = document.createElement("section");
     const num = document.createElement("span");
     num.className = "num";
@@ -95,6 +97,12 @@
     iframe.allowFullscreen = true;
     f.appendChild(iframe);
     s.append(num, h, f);
+    if (note) {
+      const n = document.createElement("p");
+      n.className = "note";
+      n.textContent = note;
+      s.appendChild(n);
+    }
     main.appendChild(s);
   });
 </script>
