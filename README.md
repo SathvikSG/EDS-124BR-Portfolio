@@ -96,8 +96,8 @@ Click on any of the videos below to watch.
 
 ### Nested conditionals
 
-<a href="https://youtu.be/TyDBsdsd9P8"><img src="https://i.ytimg.com/vi/TyDBsdsd9P8/hqdefault.jpg" width="720" alt="Nested conditionals"></a>
+<a href="https://youtu.be/cD5hsyB6MNE"><img src="https://i.ytimg.com/vi/cD5hsyB6MNE/hqdefault.jpg" width="720" alt="Nested conditionals"></a>
 
-<a href="https://youtu.be/TyDBsdsd9P8"><img src="https://img.shields.io/badge/%E2%96%B6%20Play-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Play" height="36"></a>
+<a href="https://youtu.be/cD5hsyB6MNE"><img src="https://img.shields.io/badge/%E2%96%B6%20Play-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Play" height="36"></a>
 
 </div>
